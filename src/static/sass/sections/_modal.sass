@@ -1,0 +1,110 @@
+body
+	&.lock
+		overflow: hidden
+
+.modal
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	overflow: auto
+	+smooth(.3)
+	opacity: 0
+	z-index: -100000
+	&.active
+		+smooth()
+		opacity: 1
+		z-index: 100000
+		.modal
+			&__overlay
+			&__window
+				transform: scale(1)
+				transition: transform .2s ease-out
+	&__overlay
+		background-color: rgba($black, .7)
+		min-height: 100%
+		width: 100%
+		padding: 20px
+		+flex(center, center)
+	&__window
+		background-color: $bgSecondary
+		padding: 35px 65px
+		position: relative
+		width: 700px
+		transform: scale(0)
+		+r(650)
+			padding: 0 0 30px
+	&__body
+		+flex
+		margin-left: -30px
+		margin-top: -30px
+		+r(650)
+			flex-direction: column-reverse
+	&__close
+		position: absolute
+		right: 20px
+		top: 0
+		transform: translateY(40%)
+		font-size: 40px
+		cursor: pointer
+		z-index: 10
+	&__item
+		flex: 1 1 300px
+		margin-left: 30px
+		margin-top: 30px
+
+	&__decor
+		position: relative
+		min-height: 200px
+		+r(650)
+			max-height: 30vh
+	&__bg
+		+bg-box
+	&__pic
+		+bg-pic
+	&__content
+		+r(650)
+			padding: 0 35px
+	&__title
+		font-size: 36px
+		text-transform: capitalize
+		margin-bottom: 25px
+.form
+	&__field
+		margin-bottom: 20px
+	&__input
+		width: 100%
+		border: none
+		border-bottom: 1px solid $borderInputPrimary
+		padding: 10px 0
+		&::placeholder
+			text-transform: capitalize
+		&:focus
+			border-bottom: 1px solid $borderInputSecondary
+	&__submit
+		margin-top: 30px
+	&__button
+		text-transform: capitalize
+		border: none
+		background-color: transparent
+		font-size: 20px
+		padding: 10px 20px
+		position: relative
+		display: block
+		z-index: 1
+		&_decor
+			position: absolute
+			left: 0
+			top: 0
+			width: 5px
+			height: 100%
+			display: block
+			background-color: $gold
+			+smooth
+		&:hover
+			color: #fff
+			.form__button_decor
+				width: 100%
+				z-index: -1
+

@@ -47,6 +47,12 @@
 =smooth($delay:.3, $type:ease)
 	transition: all $delay+s $type
 
+=overlay($color:#000, $opacity:.5)
+	&:after
+		content: ''
+		background-color: rgba($color, $opacity)
+		+bg-box
+
 // clip-path
 
 =clp ($params)

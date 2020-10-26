@@ -1,0 +1,31 @@
+.collections
+	background-color: $bgSecondary
+	&__body
+		+flex
+		flex-wrap: wrap
+.collection
+	+flex
+	flex-wrap: wrap
+	&:nth-child(even)
+		flex-direction: row-reverse
+	&__item
+		flex: 1 1 380px
+	&__decor
+		min-height: 300px
+		position: relative
+	&__bg
+		+bg-box
+	&__pic
+		+bg-pic(top)
+	&__descr
+		padding: 60px 130px 60px 60px
+	&__txt
+		margin-bottom: 30px
+	&__title
+		margin-bottom: 20px
+	&__paragraph
+		font-size: 16px
+		line-height: 1.625
+		color: $txtSecondary
+	&__button
+		padding: 20px 55px

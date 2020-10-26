@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="static/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="static/css/libs/swiper/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__bg">
+          <picture>
+            <source srcset="static/img/bg.webp" type="image/webp"/><img class="header__pic" src="static/img/bg.png" alt="background image"/>
+          </picture>
+        </div>
+        <div class="wrapper">
+          <div class="header__body">
+            <div class="header__top">
+              <div class="header__menu">
+                <nav class="menu">
+                  <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Gallery</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="header__logo"><a class="logo" href="./">
+                  <div class="logo__icon">
+                    <picture>
+                      <source srcset="static/img/logo.webp" type="image/webp"/><img class="logo__pic" src="static/img/logo.png" alt="logo"/>
+                    </picture>
+                  </div></a></div>
+              <div class="header__social">
+                <div class="social"><a class="social__item" href="#" target="_blank">
+                    <svg class="icon icon-behance social__icon">
+                      <use xlink:href="static/img/svg/sprite.svg#behance"></use>
+                    </svg></a><a class="social__item" href="#" target="_blank">
+                    <svg class="icon icon-facebook social__icon">
+                      <use xlink:href="static/img/svg/sprite.svg#facebook"></use>
+                    </svg></a><a class="social__item" href="#" target="_blank">
+                    <svg class="icon icon-twitter social__icon">
+                      <use xlink:href="static/img/svg/sprite.svg#twitter"></use>
+                    </svg></a><a class="social__item" href="#" target="_blank">
+                    <svg class="icon icon-instagram social__icon">
+                      <use xlink:href="static/img/svg/sprite.svg#instagram"></use>
+                    </svg></a></div>
+              </div>
+            </div>
+            <div class="header__content">
+              <div class="header__text">
+                <h1 class="header__title title">Free portfolio template</h1><span class="header__subtitle">for photographers</span>
+              </div><a class="button header__button modal-link" href="#modal">discover</a>
+            </div>
+            <div class="hero__bottom"></div>
+          </div>
+        </div>
+      </header>
+      <main class="content">
+        <section class="recent section">
+          <div class="wrapper">
+            <div class="recent__body">
+              <h2 class="title title-section recent__title">Recent works</h2>
+              <div class="recent__works works">
+                <div class="works__row"><a class="work work_big" href="#">
+                    <div class="work__bg">
+                      <picture>
+                        <source srcset="static/img/img_1.webp" type="image/webp"/><img class="work__pic" src="static/img/img_1.png" alt="work pic"/>
+                      </picture>
+                    </div></a><a class="work" href="#">
+                    <div class="work__bg">
+                      <picture>
+                        <source srcset="static/img/img_2.webp" type="image/webp"/><img class="work__pic" src="static/img/img_2.png" alt="work pic"/>
+                      </picture>
+                    </div></a><a class="work" href="#">
+                    <div class="work__bg">
+                      <picture>
+                        <source srcset="static/img/img_3.webp" type="image/webp"/><img class="work__pic" src="static/img/img_3.png" alt="work pic"/>
+                      </picture>
+                    </div></a></div>
+                <div class="works__row"><a class="work work_big" href="#">
+                    <div class="work__bg">
+                      <picture>
+                        <source srcset="static/img/img_4.webp" type="image/webp"/><img class="work__pic" src="static/img/img_4.png" alt="work pic"/>
+                      </picture>
+                    </div></a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="photo-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide photo-slider__item">slide 1</div>
+            <div class="swiper-slide photo-slider__item">slide 2</div>
+            <div class="swiper-slide photo-slider__item">slide 3</div>
+            <div class="swiper-slide photo-slider__item">slide 4</div>
+            <div class="swiper-slide photo-slider__item">slide 5</div>
+          </div>
+          <div class="photo-slider-next swiper-button-next"></div>
+          <div class="photo-slider-prev swiper-button-prev"></div>
+        </div>
+      </main>
+    </div>
+    <script src="static/js/modal.js"> </script>
+    <script src="static/js/main.js" type="module"> </script>
+  </body>
+</html>

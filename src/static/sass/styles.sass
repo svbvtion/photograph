@@ -9,3 +9,111 @@
 
 //svg
 @import 'sprite'
+
+body
+	font-family: $fontPrimary
+	&.lock
+		overflow: hidden
+
+$footerHeight: 90vh
+
+.content
+	background-color: $bgSecondary
+	margin-bottom: $footerHeight
+	box-shadow: 0 0px 10px rgba(#000, .5)
+.container
+	height: 100%
+
+.wrapper
+	height: 100%
+	max-width: 1200px
+	margin: 0 auto
+	+r(1280)
+		padding: 0 40px
+	+r(600)
+		padding: 0 20px
+
+=headerLinks
+	font-size: 16px
+	color: $txtFourth
+	+smooth
+	&:hover
+		color: $txtPrimary
+=listNone
+	list-style: none
+	+flex
+.title
+	font-family: $fontSecondary
+	font-weight: 700
+	line-height: 1.6667
+	&-section
+		font-size: 36px
+
+.menu
+	&__list
+		+listNone
+	&__item
+		margin-left: 30px
+		&:first-child
+			margin-left: 0
+	&__link
+		display: block
+		font-weight: 700
+		+headerLinks
+.logo
+	position: relative
+	&__icon
+		width: 24px
+		height: 22px
+	&__pic
+		width: 100%
+		height: 100%
+		object-fit: cover
+.social
+	&__item
+	&__icon
+		+headerLinks
+	&__list
+		+listNone
+	&__item
+		margin-left: 20px
+		&:first-child
+			margin-left: 0
+
+.button
+	$borderShift: 3px
+	display: inline-block
+	font-size: 18px
+	font-weight: 700
+	color: $txtThird
+	text-transform: uppercase
+	letter-spacing: 1.8px
+	position: relative
+	&:before, &:after
+		content: ''
+		position: absolute
+		height: 100%
+		width: 100%
+		top: 0
+		left: 0
+		border: 2px solid $borderButtonPrimary
+		+smooth
+	&:hover
+		&:before
+			transform: translate(-$borderShift, -$borderShift)
+		&:after
+			transform: translate($borderShift, $borderShift)
+
+
+
+.section
+	padding: 120px 0
+
+@import 'sections/_header'
+@import 'sections/_recent'
+@import 'sections/_collections'
+@import 'sections/_footer'
+
+@import 'sections/_burger'
+@import 'sections/_modal'
+@import 'sections/_slider'

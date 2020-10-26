@@ -1,0 +1,84 @@
+include mixins/mixin
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+		meta(http-equiv="X-UA-Compatible" content="ie=edge")
+		title Document
+		link(rel="stylesheet" type="text/css" href="static/css/normalize.css")
+		link(rel="stylesheet" type="text/css" href="static/css/libs/swiper/swiper.min.css")
+			
+		link(rel="stylesheet" type="text/css" href="static/css/styles.css")
+	body
+		.container
+			header.header
+				.header__bg
+					+webp('header__pic', 'bg', 'png', 'background image')
+				.wrapper
+					.header__body
+						.header__top
+							.header__menu
+								nav.menu
+									ul.menu__list
+										li.menu__item
+											a.menu__link(href="#") Home
+										li.menu__item
+											a.menu__link(href="#") Gallery
+										li.menu__item
+											a.menu__link(href="#") Contact
+					 
+							.header__logo
+								a.logo(href='./')
+									.logo__icon
+										+webp('logo__pic', 'logo', 'png', 'logo')
+							.header__social
+								.social
+									a.social__item(href="#" target="_blank")
+										+svg('behance', 'social__icon')
+									a.social__item(href="#" target="_blank")
+										+svg('facebook', 'social__icon')
+									a.social__item(href="#" target="_blank")
+										+svg('twitter', 'social__icon')
+									a.social__item(href="#" target="_blank")
+										+svg('instagram', 'social__icon') 
+						.header__content
+							.header__text
+								h1.header__title.title Free portfolio template
+								span.header__subtitle for photographers
+							a.button.header__button.modal-link(href="#modal") discover
+						.hero__bottom
+			main.content
+				section.recent.section
+					.wrapper
+						.recent__body
+							h2.title.title-section.recent__title Recent works
+							.recent__works.works
+								.works__row
+									a.work.work_big(href="#")
+										.work__bg
+											+webp('work__pic', 'img_1', 'png', 'work pic')
+									a.work(href="#")
+										.work__bg
+											+webp('work__pic', 'img_2', 'png', 'work pic')
+									a.work(href="#")
+										.work__bg
+											+webp('work__pic', 'img_3', 'png', 'work pic')
+								.works__row
+									a.work.work_big(href="#")
+										.work__bg
+											+webp('work__pic', 'img_4', 'png', 'work pic')
+				.photo-slider
+					.swiper-wrapper
+						.swiper-slide.photo-slider__item slide 1
+						.swiper-slide.photo-slider__item slide 2
+						.swiper-slide.photo-slider__item slide 3
+						.swiper-slide.photo-slider__item slide 4
+						.swiper-slide.photo-slider__item slide 5
+					.photo-slider-next.swiper-button-next
+					.photo-slider-prev.swiper-button-prev
+	
+
+		script(src="static/js/modal.js") 
+		script(src="static/js/main.js" type='module') 
+		

@@ -1,0 +1,39 @@
+.footer
+	background-color: $bgThird
+	height: $footerHeight
+	position: relative
+	position: fixed
+	bottom: 0
+	left: 0
+	right: 0
+	z-index: -1
+	&__bg
+		+bg-box
+		+overlay
+	&__pic
+		+bg-pic()
+	&__body
+		position: relative
+		height: 100%
+		+flex(space-between, center)
+		flex-direction: column
+	&__content
+		text-align: center
+	&__title
+		font-size: 60px
+		color: $txtFifth
+		margin-bottom: 40px
+	&__button
+		color: $txtFifth
+		padding: 20px 61px
+		&:before, &:after
+			border-color: $borderButtonSecondary
+	&__bottom
+		padding: 30px 0
+	&__social
+		.social
+			&__icon
+				color: $txtFifth
+				font-size: 25px
+				&:hover
+					transform: scale(1.5)

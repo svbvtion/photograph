@@ -9,8 +9,120 @@ html(lang="en")
 		link(rel="stylesheet" type="text/css" href="static/css/normalize.css")
 		link(rel="stylesheet" type="text/css" href="static/css/styles.css")
 	body
-		header.header
+		.container
+			header.hero
+				.hero__bg
+					+webp('hero__pic', 'bg', 'png', 'background image')
+				.hero__body
+					.hero__top
+						.wrapper
+							.header
+								.header__menu
+									nav.menu
+										ul.menu__list
+											li.menu__item
+												a.menu__link(href="#") Home
+											li.menu__item
+												a.menu__link(href="#") Gallery
+											li.menu__item
+												a.menu__link(href="#") Contact
+								.header_logo
+									a.logo(href="./")
+										.logo__icon
+											+webp('logo__pic', 'logo', 'png', 'logo')
+								.header__social(data-da=('header__menu, 767, last'))
+									.social
+										ul.social__list
+											li.social__item
+												a.social__link(href="#")
+													+svg('behance', 'social__icon')
+											li.social__item
+												a.social__link(href="#")
+													+svg('facebook', 'social__icon')
+											li.social__item
+												a.social__link(href="#")
+													+svg('twitter', 'social__icon')
+											li.social__item
+												a.social__link(href="#")
+													+svg('instagram', 'social__icon') 
+								.burger 
+					.hero__content
+					.hero__bottom
 
-		main.content
+
+
+
+			main.content
+				section.recent.section
+					.wrapper
+						.recent__body
+							h2.title.title-section.recent__title Recent works
+							.recent__works.works
+								.works__row
+									a.work.work_big(href="#")
+										.work__bg
+											+webp('work__pic', 'img_1', 'png', 'work pic')
+									a.work(href="#")
+										.work__bg
+											+webp('work__pic', 'img_2', 'png', 'work pic')
+									a.work(href="#")
+										.work__bg
+											+webp('work__pic', 'img_3', 'png', 'work pic')
+								.works__row
+									a.work.work_big(href="#")
+										.work__bg
+											+webp('work__pic', 'img_4', 'png', 'work pic')
+				section.collections.section
+					.wrapper
+						.collections__body
+							.collection
+								.collection__decor.collection__item
+									.collection__bg
+										+webp('collection__pic', 'card-img_1', 'png', 'collection background')
+								.collection__descr.collection__item
+									h3.title.title-section.collection__title B&W Collection
+									.collection__txt
+										p.collection__paragraph They were six beautiful children but the youngest was the prettiest of them all. Her skin was as clear and delicate as a rose-leaf and her eyes as blue as the deepest sea. But like all the others she had no feet and her body ended in a fish’s tail.
+									a.button.collection__button(href="#") more
+							.collection
+								.collection__decor.collection__item
+									.collection__bg
+										+webp('collection__pic', 'card-img_2', 'png', 'collection background')
+								.collection__descr.collection__item
+									h3.title.title-section.collection__title Mother Earth
+									.collection__txt
+										p.collection__paragraph And racism will be dead, for variety will then be the great fact of Humanity, and not uniformity. Mother Earth will finally have given birth not to merely a Terrestrian, but to a Galactic Empire
+									a.button.collection__button(href="#") more 
+							.collection
+								.collection__decor.collection__item
+									.collection__bg
+										+webp('collection__pic', 'card-img_3', 'png', 'collection background')
+								.collection__descr.collection__item
+									h3.title.title-section.collection__title Portraits
+									.collection__txt
+										p.collection__paragraph 'Yes, we went to school in the sea, though you mayn't believe it—' 'I never said I didn't!' interrupted Alice. 'You did,' said the Mock Turtle. 'Hold your tongue!' added the Gryphon, before Alice could speak again.
+									a.button.collection__button(href="#") more 
+
 
 		footer.footer
+				.footer__bg
+					+webp('footer__pic', 'img_4', 'png', 'footer background')
+				.wrapper
+					.footer__body
+						.footer__top
+						.footer__content
+							h2.title.footer__title Связаться со мной
+							a.button.footer__button(href='#') escribidme
+						.footer__bottom
+							.footer__social
+								.social
+									a.social__item(href="#" target="_blank")
+										+svg('behance', 'social__icon')
+									a.social__item(href="#" target="_blank")
+										+svg('facebook', 'social__icon')
+									a.social__item(href="#" target="_blank")
+										+svg('twitter', 'social__icon')
+									a.social__item(href="#" target="_blank")
+										+svg('instagram', 'social__icon')
+		script(src="static/js/main.js") 
+		script(src="static/js/adapt.js")

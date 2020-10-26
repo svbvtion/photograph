@@ -1,0 +1,63 @@
+.hero
+	height: 100%
+	position: relative
+	&__bg
+		+bg-box
+		&:after
+			content: ''
+			+bg-box
+			background-color: rgba($bgSecondary, .85)
+	&__pic
+		+bg-pic
+	&__body
+		position: relative
+	&__top
+		+phone
+			&:before
+				content: ''
+				position: absolute
+				background-color: $bgPrimary
+				top: 0
+				right: 0
+				height: 100%
+				z-index: 0
+				+smooth
+				left: 100%
+			&.active
+				&:before
+					left: 0
+
+
+.header
+	+flex(space-between, center)
+	padding: 20px 0
+
+	&__menu
+		+phone
+			position: fixed
+			top: 100px
+			left: 100%
+			right: 0
+			bottom: 0
+			background-color: $bgSecondary
+			padding: 20px
+			+flex
+			flex-direction: column
+			overflow: auto
+			transition: left .3s ease
+			&.active
+				left: 0
+			.menu
+				flex: 1
+				margin-bottom: 30px
+				&__list
+					flex-direction: column
+				&__item
+					margin: 0
+					padding: 20px 0
+					border-bottom: 1px solid #000
+				&__link
+					display: block
+			.social
+				&__list
+					justify-content: center
