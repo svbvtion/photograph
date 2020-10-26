@@ -7,7 +7,7 @@ const heroTop = document.querySelector('.hero__top');
 const headerMenu = document.querySelector('.header__menu');
 
 burger.addEventListener('click', () => {
-	body.classList.toggle('.lock');
+	body.classList.toggle('lock');
 	burger.classList.toggle('active');
 	heroTop.classList.toggle('active');
 	headerMenu.style.top = heroTop.offsetHeight+'px'
