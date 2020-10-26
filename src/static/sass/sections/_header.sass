@@ -3,10 +3,13 @@
 	position: relative
 	&__bg
 		+bg-box
+
 		&:after
 			content: ''
 			+bg-box
 			background-color: rgba($bgSecondary, .85)
+		+phone
+			z-index: 10
 	&__pic
 		+bg-pic
 	&__body
@@ -26,11 +29,18 @@
 				z-index: 0
 				+smooth
 				left: 100%
+				z-index: 20
 			&.active
 				&:before
 					left: 0
 	&__content
 		text-align: center
+		+phone
+			z-index: 20
+
+	&__bottom
+		+phone
+			z-index: 20
 	&__text
 		margin-bottom: 100px
 		+r(500)
@@ -73,8 +83,6 @@
 			&.active
 				display: flex
 				left: 0
-				.social
-					display: block
 			.menu
 				flex: 1
 				margin-bottom: 30px
@@ -87,6 +95,5 @@
 				&__link
 					display: block
 			.social
-				display: none
 				&__list
 					justify-content: center
