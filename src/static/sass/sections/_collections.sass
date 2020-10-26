@@ -1,3 +1,7 @@
+=rmin($width)
+	@media (min-width:$width+'px')
+		@content
+		
 .collections
 	background-color: $bgSecondary
 	&__body
@@ -6,19 +10,26 @@
 .collection
 	+flex
 	flex-wrap: wrap
-	&:nth-child(even)
-		flex-direction: row-reverse
+	+rmin(769)
+		&:nth-child(even)
+			flex-direction: row-reverse
 	&__item
 		flex: 1 1 380px
+
 	&__decor
 		min-height: 300px
 		position: relative
+
 	&__bg
 		+bg-box
 	&__pic
 		+bg-pic(top)
 	&__descr
 		padding: 60px 130px 60px 60px
+		+r(786)
+			text-align: center
+		+r(600)
+			padding: 55px 0px 60px
 	&__txt
 		margin-bottom: 30px
 	&__title
