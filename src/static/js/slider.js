@@ -49,12 +49,7 @@ let code = '';
 for(let x = 1; x < +curentObj['count'] + 1; x++){
     code += `
         <div class="swiper-slide slide">
-                <div class="slide__bg">
-                    <picture>
-                      <source srcset="static/img/${curentWork}-${x}.webp" type="image/webp"/>
-                      <img class="slide__pic" src="static/img/${curentWork}-${x}.jpg" alt="slide bg"/>
-                    </picture>
-                </div>
+               
             </div>`;
 }
 
