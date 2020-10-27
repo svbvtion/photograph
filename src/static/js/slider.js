@@ -10,9 +10,15 @@ const curentWork = refList[1]
 const curentObj = collection[curentCollection][curentWork]
 
 const hero = document.querySelector('.hero');
+const heroText = document.querySelector('.hero__text');
 
 const slider = document.querySelector('.slider');
 
+heroText.insertAdjacentHTML('afterbegin',  `
+        <h1 class="title hero__title">${curentObj['name']}</h1>
+        <p class="subtitle hero__subtitle">${curentCollection}</p>
+
+    `);
 
 hero.insertAdjacentHTML('afterbegin', `
     <div class="hero__bg">
