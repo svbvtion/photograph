@@ -1,5 +1,7 @@
 .recent
 	background-color: $bgPrimary
+	&_other
+		background-color: $bgSecondary
 	&__title
 		text-align: center
 		margin-bottom: 50px
@@ -24,7 +26,6 @@
 	position: relative
 	background-color: $bgThird
 	grid-row: span 2
-	
 	&__bg
 		+bg-box
 	&__pic
@@ -33,5 +34,21 @@
 		grid-row: span 4
 		grid-column: span 2
 		+r(700)
-				grid-column: span 1
-				grid-row: span 2
+			grid-column: span 1
+			grid-row: span 2
+	&__description
+		position: relative
+		height: 100%
+		width: 100%
+		opacity: 0
+		+flex(center, center)
+		+overlay(#000, .4)
+		+smooth
+		
+		&:hover
+			opacity: 1
+	&__name
+		font-size: 2em
+		color: #fff
+		z-index: 1
+		text-transform: capitalize

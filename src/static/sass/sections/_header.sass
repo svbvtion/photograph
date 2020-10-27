@@ -1,6 +1,14 @@
 .hero
 	height: 100%
 	position: relative
+	&_other
+		height: auto
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		z-index: 100
+		background-color: $bgPrimary
 	&__bg
 		+bg-box
 
@@ -14,6 +22,7 @@
 		+bg-pic
 	&__body
 		height: 100%
+		
 		position: relative
 		+flex(space-between)
 		flex-direction: column

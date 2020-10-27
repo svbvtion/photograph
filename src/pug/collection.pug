@@ -1,0 +1,126 @@
+include mixins/mixin
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+		meta(http-equiv="X-UA-Compatible" content="ie=edge")
+		title Document
+		link(rel="stylesheet" type="text/css" href="static/css/normalize.css")
+		link(rel="stylesheet" type="text/css" href="static/css/styles.css")
+	body
+		.container
+			header.hero.hero_other
+				.hero__body
+					.hero__top
+						.wrapper
+							.header
+								.header__menu
+									nav.menu
+										ul.menu__list
+											li.menu__item
+												a.menu__link(href="#") Home
+											li.menu__item
+												a.menu__link(href="#") Gallery
+											li.menu__item
+												a.menu__link(href="#") Contact
+								.header_logo
+									a.logo(href="./")
+										.logo__icon
+											+webp('logo__pic', 'logo', 'png', 'logo')
+								.header__social(data-da=('header__menu, 767, last'))
+									.social
+										ul.social__list
+											li.social__item
+												a.social__link(href="#")
+													+svg('behance', 'social__icon')
+											li.social__item
+												a.social__link(href="#")
+													+svg('facebook', 'social__icon')
+											li.social__item
+												a.social__link(href="#")
+													+svg('twitter', 'social__icon')
+											li.social__item
+												a.social__link(href="#")
+													+svg('instagram', 'social__icon') 
+								.burger 
+					
+			main.content
+				section.recent.recent_other.section
+					.wrapper
+						.recent__body
+							h2.title.title-section.recent__title Recent works
+							.recent__works.works
+								//- .works__row
+								//- 	a.work.work_big(href="./gallery.html#art")
+								//- 		.work__bg
+								//- 			+webp('work__pic', 'img_1', 'png', 'work pic')
+								//- 		.work__description
+								//- 			span.work__name in other space
+								//- 	a.work(href="./gallery.html#painting")
+								//- 		.work__bg
+								//- 			+webp('work__pic', 'img_2', 'png', 'work pic')
+								//- 		.work__description
+								//- 			span.work__name renaissance
+								//- 	a.work(href="./gallery.html#img")
+								//- 		.work__bg
+								//- 			+webp('work__pic', 'img_3', 'png', 'work pic')
+								//- 		.work__description
+								//- 			span.work__name pineapple delignt
+								//- 	a.work(href="./gallery.html#painting")
+								//- 		.work__bg
+								//- 			+webp('work__pic', 'img_2', 'png', 'work pic')
+								//- 		.work__description
+								//- 			span.work__name renaissance
+								//- 	a.work(href="./gallery.html#img")
+								//- 		.work__bg
+								//- 			+webp('work__pic', 'img_3', 'png', 'work pic')
+								//- 		.work__description
+								//- 			span.work__name pineapple delignt
+								//- 	a.work(href="./gallery.html#painting")
+								//- 		.work__bg
+								//- 			+webp('work__pic', 'img_2', 'png', 'work pic')
+								//- 		.work__description
+								//- 			span.work__name renaissance
+								
+								//- .works__row
+								//- 	a.work(href="./gallery.html#img")
+								//- 		.work__bg
+								//- 			+webp('work__pic', 'img_3', 'png', 'work pic')
+								//- 		.work__description
+								//- 			span.work__name pineapple delignt
+								//- 	a.work.work_big(href="#")
+								//- 		.work__bg
+								//- 			+webp('work__pic', 'img_4', 'png', 'work pic')
+								//- 		.work__description
+								//- 			span.work__name fireFly
+								//- 	a.work(href="./gallery.html#img")
+								//- 		.work__bg
+								//- 			+webp('work__pic', 'img_3', 'png', 'work pic')
+								//- 		.work__description
+								//- 			span.work__name pineapple delignt
+									
+		footer.footer
+				.footer__bg
+					+webp('footer__pic', 'img_4', 'png', 'footer background')
+				.wrapper
+					.footer__body
+						.footer__top
+						.footer__content
+							h2.title.footer__title Связаться со мной
+							a.button.footer__button(href='#') escribidme
+						.footer__bottom
+							.footer__social
+								.social
+									a.social__item(href="#" target="_blank")
+										+svg('behance', 'social__icon')
+									a.social__item(href="#" target="_blank")
+										+svg('facebook', 'social__icon')
+									a.social__item(href="#" target="_blank")
+										+svg('twitter', 'social__icon')
+									a.social__item(href="#" target="_blank")
+										+svg('instagram', 'social__icon')
+		script(src="static/js/main.js")
+		script(src="static/js/adapt.js")
+		script(src="static/js/collection.js" type="module")
+		

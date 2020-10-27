@@ -1,0 +1,1 @@
+"use strict";const contentOther=document.querySelector(".content__other"),hero=document.querySelector(".hero");contentOther.style.marginTop=hero.offsetHeight+"px";

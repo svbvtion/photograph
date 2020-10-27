@@ -1,10 +1,39 @@
-.photo-slider
-	background-color: #000
-	position: relative
-	&__item
-		background-color: pink
-		height: 50vh
-	&-next
-		height: 100px
+.slider
+	&__pagination
+		display: inline-block
 		width: 100px
-		background-color: #000
+		padding: 5px
+		text-align: center
+		background-color: #fff
+		position: absolute
+		bottom: 20px
+		left: 100%
+		transform: translateX(-100%)
+		z-index: 1
+		+rmin(600)
+			display: none
+	&__button
+		background-color: rgba(#fff, .8)
+		height: 45px
+		width: 45px
+		border-radius: 50%
+		outline: none
+		&:after
+			color: #000
+			font-size: 100%
+		+r(600)
+			display: none
+
+.slide
+	height: 80vh
+	background-color: pink
+	position: relative
+	&__bg
+		+bg-box
+	&__pic
+		+bg-pic
+
+	+portrait
+		height: 70vh
+	+phone
+		height: 85vh

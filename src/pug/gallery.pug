@@ -1,0 +1,93 @@
+include mixins/mixin
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+		meta(http-equiv="X-UA-Compatible" content="ie=edge")
+		title Document
+		link(rel="stylesheet" type="text/css" href="static/css/normalize.css")
+		link(rel="stylesheet" type="text/css" href="static/css/libs/swiper/swiper.min.css")
+		link(rel="stylesheet" type="text/css" href="static/css/styles.css")
+	body
+		.container
+			header.hero
+				.hero__bg
+					+webp('hero__pic', 'painting-1', 'png', 'background image')
+				.hero__body
+					.hero__top
+						.wrapper
+							.header
+								.header__menu
+									nav.menu
+										ul.menu__list
+											li.menu__item
+												a.menu__link(href="#") Home
+											li.menu__item
+												a.menu__link(href="#") Gallery
+											li.menu__item
+												a.menu__link(href="#") Contact
+								.header_logo
+									a.logo(href="./")
+										.logo__icon
+											+webp('logo__pic', 'logo', 'png', 'logo')
+								.header__social(data-da=('header__menu, 767, last'))
+									.social
+										ul.social__list
+											li.social__item
+												a.social__link(href="#")
+													+svg('behance', 'social__icon')
+											li.social__item
+												a.social__link(href="#")
+													+svg('facebook', 'social__icon')
+											li.social__item
+												a.social__link(href="#")
+													+svg('twitter', 'social__icon')
+											li.social__item
+												a.social__link(href="#")
+													+svg('instagram', 'social__icon') 
+								.burger 
+					.hero__content
+						.hero__text
+							h1.title.hero__title In Other Space
+							p.subtitle.hero__subtitle Art
+						//a.hero__button.button(href="#") Discover 
+
+					.hero__bottom
+
+
+					
+			main.content.content__other
+				section.gallery
+					.gallery__text
+						.wrapper
+							h2.title.title-section.gallery__title Recent works
+							p.gallery__description Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Буквенных свой парадигматическая семь скатился ее лучше ты рекламных себя собрал по всей имени свое составитель букв заглавных не дороге, своих, взгляд однажды океана журчит сих, ручеек? Повстречался всеми которое, путь текстами знаках журчит рекламных, вершину вопроса решила, по всей это предупреждал составитель толку но однажды своего своих большой великий, дал.
+					.slider
+					.gallery__exit
+						a.button.gallery__button(href="#") Другие работы 
+		footer.footer
+				.footer__bg
+					+webp('footer__pic', 'img_4', 'png', 'footer background')
+				.wrapper
+					.footer__body
+						.footer__top
+						.footer__content
+							h2.title.footer__title Связаться со мной
+							a.button.footer__button(href='#') escribidme
+						.footer__bottom
+							.footer__social
+								.social
+									a.social__item(href="#" target="_blank")
+										+svg('behance', 'social__icon')
+									a.social__item(href="#" target="_blank")
+										+svg('facebook', 'social__icon')
+									a.social__item(href="#" target="_blank")
+										+svg('twitter', 'social__icon')
+									a.social__item(href="#" target="_blank")
+										+svg('instagram', 'social__icon')
+		//script(src="static/js/other.js") 
+		script(src="static/js/main.js") 
+		script(src="static/js/adapt.js")
+		script(src="static/js/gallery.js") 
+		script(src="static/js/slider.js" type="module") 
