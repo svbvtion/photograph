@@ -9,8 +9,20 @@ const curentCollection = refList[0]
 const curentWork = refList[1]
 const curentObj = collection[curentCollection][curentWork]
 
+const hero = document.querySelector('.hero');
 
 const slider = document.querySelector('.slider');
+
+
+hero.insertAdjacentHTML('afterbegin', `
+    <div class="hero__bg">
+        <picture>
+            <source srcset="static/img/${curentObj['previewPic']}.webp" type="image/webp"/>
+            <img class="hero__pic" src="static/img/${curentObj['previewPic']}.${curentObj['type']}" alt="background image"/>
+        </picture>
+    </div>
+`);
+
 
 slider.insertAdjacentHTML('beforeend', `
 

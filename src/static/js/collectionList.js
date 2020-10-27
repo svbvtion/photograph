@@ -46,7 +46,7 @@ const collection = {
 			type: 'jpg',
 			count: 9
 		},
-		soul: {
+		south: {
 			name: 'Алёна Вязёнкина - Soul cats',
 			previewPic: 'south-1',
 			type: 'jpg',
