@@ -42,7 +42,6 @@ for(let x = 1; x < +count + 1; x++){
                     <img class="glide__pic" src="static/img/${curentWork}-${x}.${curentObj['type']}">
                 </picture>
             </div>
-            <span class="glide__num">${x} / ${count}</span>
         </li>`;
 }
 
