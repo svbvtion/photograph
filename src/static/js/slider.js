@@ -13,6 +13,9 @@ const hero = document.querySelector('.hero');
 const heroText = document.querySelector('.hero__text');
 
 const slider = document.querySelector('.slider');
+const galleryExit = document.querySelector('.gallery__exit');
+
+document.title = `${curentObj['name']}`; 
 
 heroText.insertAdjacentHTML('afterbegin',  `
         <h1 class="title hero__title">${curentObj['name']}</h1>
@@ -86,3 +89,7 @@ let swiper = new Swiper('.swiper-container', {
     }
 
 })
+
+galleryExit.insertAdjacentHTML('beforeend', `
+    <a class="button gallery__button" href=./collection.html#${refList[0]}> Другие работы </a> 
+    `);

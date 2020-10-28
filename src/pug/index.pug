@@ -5,7 +5,7 @@ html(lang="en")
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
 		meta(http-equiv="X-UA-Compatible" content="ie=edge")
-		title Document
+		title Ксения Чебиряк. Фотограф удивительных людей
 		link(rel="stylesheet" type="text/css" href="static/css/normalize.css")
 		link(rel="stylesheet" type="text/css" href="static/css/styles.css")
 	body
@@ -21,11 +21,11 @@ html(lang="en")
 									nav.menu
 										ul.menu__list
 											li.menu__item
-												a.menu__link(href="#") Home
+												a.menu__link(href="./collection.html#art") Art
 											li.menu__item
-												a.menu__link(href="#") Gallery
+												a.menu__link(href="./collection.html#business") Business
 											li.menu__item
-												a.menu__link(href="#") Contact
+												a.menu__link(href="./collection.html#fashion") Fashion
 								.header_logo
 									a.logo(href="./")
 										.logo__icon
@@ -46,11 +46,12 @@ html(lang="en")
 												a.social__link(href="#")
 													+svg('instagram', 'social__icon') 
 								.burger 
+					
 					.hero__content
 						.hero__text
-							h1.title.hero__title Free portfolio template
-							p.subtitle.hero__subtitle for photographer
-						a.hero__button.button(href="#") Discover 
+							h1.title.hero__title Ксения Чебиряк
+							p.subtitle.hero__subtitle Фотограф
+						a.hero__button.button(href="#") Открыть 
 
 					.hero__bottom
 
@@ -61,29 +62,37 @@ html(lang="en")
 				section.recent.section
 					.wrapper
 						.recent__body
-							h2.title.title-section.recent__title Recent works
+							h2.title.title-section.recent__title Последние работы
 							.recent__works.works
 								.works__row
-									a.work.work_big(href="#")
+									a.work.work_big(href="./gallery.html#business/tracy")
 										.work__bg
-											+webp('work__pic', 'img_1', 'png', 'work pic')
-									a.work(href="#")
+											+webp('work__pic', 'tracy-4', 'jpg', 'work pic')
+										.work__description
+											span.work__name Tracy Megano - Певица
+									a.work(href="./gallery.html#art/art")
 										.work__bg
-											+webp('work__pic', 'img_2', 'png', 'work pic')
-									a.work(href="#")
+											+webp('work__pic', 'art-9', 'jpg', 'work pic')
+										.work__description
+											span.work__name In other space
+									a.work(href="./gallery.html#fashion/qris")
 										.work__bg
-											+webp('work__pic', 'img_3', 'png', 'work pic')
+											+webp('work__pic', 'qris-3', 'jpg', 'work pic')
+										.work__description
+											span.work__name qari qris. София
 								.works__row
-									a.work.work_big(href="#")
+									a.work.work_big(href="./gallery.html#business/south")
 										.work__bg
-											+webp('work__pic', 'img_4', 'png', 'work pic')
+											+webp('work__pic', 'south-2', 'png', 'work pic')
+										.work__description
+											span.work__name Алёна Вязёнкина - Soul Cats
 				section.collections.section
 					.collections__body
 						.wrapper
 							.collection
 								.collection__decor.collection__item
 									.collection__bg
-										+webp('collection__pic', 'card-img_1', 'png', 'collection background')
+										+webp('collection__pic', 'painting-1', 'jpg', 'collection background')
 								.collection__descr.collection__item
 									h3.title.title-section.collection__title Art
 									.collection__txt
@@ -92,7 +101,7 @@ html(lang="en")
 							.collection
 								.collection__decor.collection__item
 									.collection__bg
-										+webp('collection__pic', 'card-img_2', 'png', 'collection background')
+										+webp('collection__pic', 'olga-4', 'png', 'collection background')
 								.collection__descr.collection__item
 									h3.title.title-section.collection__title Business
 									.collection__txt
@@ -101,7 +110,7 @@ html(lang="en")
 							.collection
 								.collection__decor.collection__item
 									.collection__bg
-										+webp('collection__pic', 'card-img_3', 'png', 'collection background')
+										+webp('collection__pic', 'shop-3', 'jpg', 'collection background')
 								.collection__descr.collection__item
 									h3.title.title-section.collection__title Fashion
 									.collection__txt
@@ -117,7 +126,7 @@ html(lang="en")
 						.footer__top
 						.footer__content
 							h2.title.footer__title Связаться со мной
-							a.button.footer__button(href='#') escribidme
+							a.button.footer__button(href='#') Открыть
 						.footer__bottom
 							.footer__social
 								.social
