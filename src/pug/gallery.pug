@@ -7,7 +7,7 @@ html(lang="en")
 		meta(http-equiv="X-UA-Compatible" content="ie=edge")
 		title Document
 		link(rel="stylesheet" type="text/css" href="static/css/normalize.css")
-		link(rel="stylesheet" type="text/css" href="static/css/libs/swiper/swiper.min.css")
+		link(rel="stylesheet" type="text/css" href="static/css/libs/glide.core.min.css")
 		link(rel="stylesheet" type="text/css" href="static/css/styles.css")
 	body
 		.container
@@ -58,7 +58,9 @@ html(lang="en")
 						.wrapper
 							h2.title.title-section.gallery__title Recent works
 							p.gallery__description Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Буквенных свой парадигматическая семь скатился ее лучше ты рекламных себя собрал по всей имени свое составитель букв заглавных не дороге, своих, взгляд однажды океана журчит сих, ручеек? Повстречался всеми которое, путь текстами знаках журчит рекламных, вершину вопроса решила, по всей это предупреждал составитель толку но однажды своего своих большой великий, дал.
-					.slider
+					.glide
+						.glide__track(data-glide-el="track")
+							.glide__slides
 					.gallery__exit
 						a.button.gallery__button(href="#") Другие работы 
 		footer.footer
@@ -81,8 +83,8 @@ html(lang="en")
 										+svg('twitter', 'social__icon')
 									a.social__item(href="#" target="_blank")
 										+svg('instagram', 'social__icon')
-		//script(src="static/js/other.js") 
 		script(src="static/js/main.js") 
 		script(src="static/js/adapt.js")
 		script(src="static/js/gallery.js") 
+		script(src="static/js/libs/glide.min.js") 
 		script(src="static/js/slider.js" type="module") 
