@@ -1,3 +1,4 @@
+import Swiper from './libs/swiper/swiper-bundle.esm.browser.min.js'
 import {collection} from './collectionList.js'
 
 
@@ -11,7 +12,7 @@ const curentObj = collection[curentCollection][curentWork]
 const hero = document.querySelector('.hero');
 const heroText = document.querySelector('.hero__text');
 
-const slidesContainer = document.querySelector('.glide__slides');
+const slider = document.querySelector('.slider');
 
 heroText.insertAdjacentHTML('afterbegin',  `
         <h1 class="title hero__title">${curentObj['name']}</h1>
@@ -29,38 +30,59 @@ hero.insertAdjacentHTML('afterbegin', `
 `);
 
 
+slider.insertAdjacentHTML('beforeend', `
+
+    <div class="slider__container swiper-container">
+        <div class="swiper-wrapper">
+            
+        </div>
+        <div class="slider__pagination"></div>
+        <div class="slider__button swiper-button-next"></div>
+        <div class="slider__button swiper-button-prev"></div>
+    </div>
+
+    `);
+const sliderWrapper = document.querySelector('.swiper-wrapper');
 
 let code = '';
-let count = curentObj['count'];
 
-for(let x = 1; x < +count + 1; x++){
+for(let x = 1; x < +curentObj['count'] + 1; x++){
     code += `
-         <li class="glide__slide">
-            <div class="glide__bg">
-                <picture>
-                    <source srcset="static/img/${curentWork}-${x}.webp" type="image/webp">
-                    <img class="glide__pic" src="static/img/${curentWork}-${x}.${curentObj['type']}">
-                </picture>
-            </div>
-        </li>`;
+        <div class="swiper-slide slide">
+                <div class="slide__bg">
+                    <picture>
+                      <source srcset="static/img/${curentWork}-${x}.webp" type="image/webp"/>
+                      <img class="slide__pic" src="static/img/${curentWork}-${x}.jpg" alt="slide bg"/>
+                    </picture>
+                </div>
+            </div>`;
 }
 
-console.log(code);
-slidesContainer.insertAdjacentHTML('afterbegin', code)
+sliderWrapper.insertAdjacentHTML('afterbegin', code)
 
-const slider = new Glide('.glide', {
-    perView: 3,
-    type: 'carousel',
-    gap: 10,
+let swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    keyboard: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    mousewheel: {
+        forceToAxis: true
+    },
+    pagination: {
+        el: ".slider__pagination",
+        type: 'fraction'
+    },
     breakpoints: {
-        1024: {
-            perView: 2
+        600: {
+            slidesPerView: 2
         },
-        767: {
-            perView: 1
+        1025: {
+            slidesPerView: 3,
+
         }
     }
-});
 
-
-slider.mount()
+})
