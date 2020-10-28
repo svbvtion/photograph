@@ -12,7 +12,7 @@ html(lang="en")
 		.container
 			header.hero
 				.hero__bg
-					+webp('hero__pic', 'bg', 'png', 'background image')
+					+webp('hero__pic', 'alena-14', 'png', 'background image')
 				.hero__body
 					.hero__top
 						.wrapper
@@ -34,16 +34,16 @@ html(lang="en")
 									.social
 										ul.social__list
 											li.social__item
-												a.social__link(href="#")
+												a.social__link(href="https://vk.com/chebiryak" target="_blank")
 													+svg('behance', 'social__icon')
 											li.social__item
-												a.social__link(href="#")
+												a.social__link(href="https://web.facebook.com/chebiryakk" target="_blank")
 													+svg('facebook', 'social__icon')
 											li.social__item
-												a.social__link(href="#")
+												a.social__link(href="https://wa.me/79261764569" target="_blank")
 													+svg('twitter', 'social__icon')
 											li.social__item
-												a.social__link(href="#")
+												a.social__link(href="https://www.instagram.com/_kseniya_che_/" target="_blank")
 													+svg('instagram', 'social__icon') 
 								.burger 
 					
@@ -101,7 +101,7 @@ html(lang="en")
 							.collection
 								.collection__decor.collection__item
 									.collection__bg
-										+webp('collection__pic', 'olga-4', 'png', 'collection background')
+										+webp('collection__pic', 'olga-8', 'png', 'collection background')
 								.collection__descr.collection__item
 									h3.title.title-section.collection__title Business
 									.collection__txt
@@ -115,7 +115,8 @@ html(lang="en")
 									h3.title.title-section.collection__title Fashion
 									.collection__txt
 										p.collection__paragraph 'Yes, we went to school in the sea, though you mayn't believe it—' 'I never said I didn't!' interrupted Alice. 'You did,' said the Mock Turtle. 'Hold your tongue!' added the Gryphon, before Alice could speak again.
-									a.button.collection__button(href="./collection.html#fashion") more 
+									a.button.collection__button(href="./collection.html#fashion") more
+			.box  
 
 
 		footer.footer
@@ -130,13 +131,18 @@ html(lang="en")
 						.footer__bottom
 							.footer__social
 								.social
-									a.social__item(href="#" target="_blank")
-										+svg('behance', 'social__icon')
-									a.social__item(href="#" target="_blank")
-										+svg('facebook', 'social__icon')
-									a.social__item(href="#" target="_blank")
-										+svg('twitter', 'social__icon')
-									a.social__item(href="#" target="_blank")
-										+svg('instagram', 'social__icon')
+									ul.social__list
+										li.social__item
+											a.social__link(href="https://vk.com/chebiryak" target="_blank")
+												+svg('behance', 'social__icon')
+										li.social__item
+											a.social__link(href="https://web.facebook.com/chebiryakk" target="_blank")
+												+svg('facebook', 'social__icon')
+										li.social__item
+											a.social__link(href="https://wa.me/79261764569" target="_blank")
+												+svg('twitter', 'social__icon')
+										li.social__item
+											a.social__link(href="https://www.instagram.com/_kseniya_che_/" target="_blank")
+												+svg('instagram', 'social__icon') 
 		script(src="static/js/main.js") 
 		script(src="static/js/adapt.js")
