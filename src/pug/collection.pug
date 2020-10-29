@@ -21,8 +21,7 @@ html(lang="en")
 										ul.menu__list
 											li.menu__item
 												a.menu__link(href="./") На главную
-											li.menu__item
-												a.menu__link(href="./") Контакты
+											
 											
 											
 								.header_logo
@@ -50,7 +49,7 @@ html(lang="en")
 				section.recent.recent_other.section.section__other
 					.wrapper
 						.recent__body
-							h2.title.title-section.recent__title Последние работы
+							h2.title.title-section.recent__title.collection__page_title
 							.recent__works.works
 								
 									
@@ -62,7 +61,7 @@ html(lang="en")
 						.footer__top
 						.footer__content
 							h2.title.footer__title Связаться со мной
-							a.button.footer__button(href='#') Открыть
+							a.button.footer__button.modal__link(href='#') Открыть
 						.footer__bottom
 							.footer__social
 								.social
@@ -83,4 +82,5 @@ html(lang="en")
 		script(src="static/js/main.js")
 		script(src="static/js/adapt.js")
 		script(src="static/js/collection.js" type="module")
+		script(src="static/js/modal.js") 
 		

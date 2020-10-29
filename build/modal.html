@@ -60,50 +60,37 @@
           </div>
         </div>
       </header>
-      <main class="content">
-        <section class="recent section">
-          <div class="wrapper">
-            <div class="recent__body">
-              <h2 class="title title-section recent__title">Recent works</h2>
-              <div class="recent__works works">
-                <div class="works__row"><a class="work work_big" href="#">
-                    <div class="work__bg">
-                      <picture>
-                        <source srcset="static/img/img_1.webp" type="image/webp"/><img class="work__pic" src="static/img/img_1.png" alt="work pic"/>
-                      </picture>
-                    </div></a><a class="work" href="#">
-                    <div class="work__bg">
-                      <picture>
-                        <source srcset="static/img/img_2.webp" type="image/webp"/><img class="work__pic" src="static/img/img_2.png" alt="work pic"/>
-                      </picture>
-                    </div></a><a class="work" href="#">
-                    <div class="work__bg">
-                      <picture>
-                        <source srcset="static/img/img_3.webp" type="image/webp"/><img class="work__pic" src="static/img/img_3.png" alt="work pic"/>
-                      </picture>
-                    </div></a></div>
-                <div class="works__row"><a class="work work_big" href="#">
-                    <div class="work__bg">
-                      <picture>
-                        <source srcset="static/img/img_4.webp" type="image/webp"/><img class="work__pic" src="static/img/img_4.png" alt="work pic"/>
-                      </picture>
-                    </div></a></div>
+      <div class="modal" id="modal"></div>
+      <div class="modal__overlay" data-close="true">
+        <div class="modal__window"><span class="modal__close" data-close="true">&times</span>
+          <div class="modal__body">
+            <div class="modal__item modal__content">
+              <h2 class="modal__title title">contact us</h2>
+              <form class="form">
+                <div class="form__field">
+                  <input class="form__input" type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form__field">
+                  <input class="form__input" type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form__field">
+                  <input class="form__input" type="tel" placeholder="Phone number" required>
+                </div>
+                <div class="form__submit">
+                  <button class="form__button">send it<span class="form__button_decor"></span></button>
+                </div>
+              </form>
+            </div>
+            <div class="modal__decor modal__item">
+              <div class="modal__bg">
+                <picture>
+                  <source srcset="static/img/card-img_2.webp" type="image/webp"/><img class="modal__pic" src="static/img/card-img_2.png" alt="card"/>
+                </picture>
               </div>
             </div>
           </div>
-        </section>
-        <div class="photo-slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide photo-slider__item">slide 1</div>
-            <div class="swiper-slide photo-slider__item">slide 2</div>
-            <div class="swiper-slide photo-slider__item">slide 3</div>
-            <div class="swiper-slide photo-slider__item">slide 4</div>
-            <div class="swiper-slide photo-slider__item">slide 5</div>
-          </div>
-          <div class="photo-slider-next swiper-button-next"></div>
-          <div class="photo-slider-prev swiper-button-prev"></div>
         </div>
-      </main>
+      </div>
     </div>
     <script src="static/js/modal.js"> </script>
     <script src="static/js/main.js" type="module"> </script>

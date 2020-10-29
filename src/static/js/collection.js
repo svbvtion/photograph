@@ -3,10 +3,15 @@ import {collection} from './collectionList.js'
 const curentRef = document.location.href.split('#')
 const curentCollection = curentRef[curentRef.length - 1]
 
+const collectionTitle = document.querySelector('.collection__page_title');
+
 let art = collection[curentCollection]
 let artKeys = Object.keys(art)
 
 const worksContainer = document.querySelector('.works');
+
+
+collectionTitle.textContent = curentCollection;
 
 let collectHTML = '';
 

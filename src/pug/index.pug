@@ -52,7 +52,7 @@ html(lang="en")
 						.hero__text
 							h1.title.hero__title Ксения Чебиряк
 							p.subtitle.hero__subtitle Фотограф
-						a.hero__button.button(href="#") Открыть 
+						a.hero__button.button.modal__link(href="#") Открыть 
 
 					.hero__bottom
 
@@ -127,7 +127,7 @@ html(lang="en")
 						.footer__top
 						.footer__content
 							h2.title.footer__title Связаться со мной
-							a.button.footer__button(href='#') Открыть
+							a.button.footer__button.modal__link(href='#') Открыть
 						.footer__bottom
 							.footer__social
 								.social
@@ -144,5 +144,8 @@ html(lang="en")
 										li.social__item
 											a.social__link(href="https://www.instagram.com/_kseniya_che_/" target="_blank")
 												+svg('instagram', 'social__icon') 
+
+		
 		script(src="static/js/main.js") 
 		script(src="static/js/adapt.js")
+		script(src="static/js/modal.js") 

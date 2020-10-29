@@ -48,36 +48,28 @@ html(lang="en")
 								span.header__subtitle for photographers
 							a.button.header__button.modal-link(href="#modal") discover
 						.hero__bottom
-			main.content
-				section.recent.section
-					.wrapper
-						.recent__body
-							h2.title.title-section.recent__title Recent works
-							.recent__works.works
-								.works__row
-									a.work.work_big(href="#")
-										.work__bg
-											+webp('work__pic', 'img_1', 'png', 'work pic')
-									a.work(href="#")
-										.work__bg
-											+webp('work__pic', 'img_2', 'png', 'work pic')
-									a.work(href="#")
-										.work__bg
-											+webp('work__pic', 'img_3', 'png', 'work pic')
-								.works__row
-									a.work.work_big(href="#")
-										.work__bg
-											+webp('work__pic', 'img_4', 'png', 'work pic')
-				.photo-slider
-					.swiper-wrapper
-						.swiper-slide.photo-slider__item slide 1
-						.swiper-slide.photo-slider__item slide 2
-						.swiper-slide.photo-slider__item slide 3
-						.swiper-slide.photo-slider__item slide 4
-						.swiper-slide.photo-slider__item slide 5
-					.photo-slider-next.swiper-button-next
-					.photo-slider-prev.swiper-button-prev
-	
+			.modal#modal
+			.modal__overlay(data-close="true")
+					.modal__window
+						span.modal__close(data-close="true") &times
+						.modal__body
+							.modal__item.modal__content
+								h2.modal__title.title contact us
+								form.form
+									.form__field
+										input.form__input(type="text" placeholder="Your Name" required)
+									.form__field
+										input.form__input(type="email" placeholder="Your Email" required)
+									.form__field
+										input.form__input(type="tel" placeholder="Phone number" required)
+									.form__submit
+										button.form__button send it
+											span.form__button_decor
+							
+							.modal__decor.modal__item
+								.modal__bg
+									+webp('modal__pic', 'card-img_2', 'png', 'card')
+				
 
 		script(src="static/js/modal.js") 
 		script(src="static/js/main.js" type='module') 

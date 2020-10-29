@@ -14,7 +14,7 @@
 		&:nth-child(even)
 			flex-direction: row-reverse
 	&__item
-		flex: 1 1 380px
+		flex: 1 1 344.5px
 
 	&__decor
 		min-height: 300px
@@ -27,9 +27,10 @@
 	&__pic
 		+bg-pic(top)
 	&__descr
-		padding: 60px 130px 60px 60px
-		+r(786)
+		padding: 60px 
+		+r(768)
 			text-align: center
+			padding: 30px 60px 50px
 		+r(600)
 			padding: 20px 0px 50px
 	&:last-child
@@ -56,3 +57,6 @@
 		+phone
 			font-size: 1rem
 			padding: 12px 40px
+	&__page
+		&_title
+			text-transform: capitalize
