@@ -17,19 +17,19 @@ function createModal() {
 	        <div class="modal__window"><span class="modal__close" data-close="true">&times</span>
 	          <div class="modal__body">
 	            <div class="modal__item modal__content">
-	              <h2 class="modal__title title">contact us</h2>
+	              <h2 class="modal__title title">Связаться</h2>
 	              <form class="form">
 	                <div class="form__field">
-	                  <input class="form__input" type="text" placeholder="Your Name" required>
+	                  <input class="form__input" type="text" placeholder="Ваше имя" required>
 	                </div>
 	                <div class="form__field">
-	                  <input class="form__input" type="email" placeholder="Your Email" required>
+	                  <input class="form__input" type="email" placeholder="Ваш Email" required>
 	                </div>
 	                <div class="form__field">
-	                  <input class="form__input" type="tel" placeholder="Phone number" required>
+	                  <input class="form__input" type="tel" placeholder="Ваш телефон" required>
 	                </div>
 	                <div class="form__submit">
-	                  <button class="form__button">send it<span class="form__button_decor"></span></button>
+	                  <button class="form__button">Отправить<span class="form__button_decor"></span></button>
 	                </div>
 	              </form>
 	            </div>
