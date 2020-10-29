@@ -36,7 +36,7 @@ html(lang="en")
 										ul.social__list
 											li.social__item
 												a.social__link(href="https://vk.com/chebiryak" target="_blank")
-													+svg('behance', 'social__icon')
+													+svg('vk', 'social__icon')
 											li.social__item
 												a.social__link(href="https://web.facebook.com/chebiryakk" target="_blank")
 													+svg('facebook', 'social__icon')
@@ -134,7 +134,7 @@ html(lang="en")
 									ul.social__list
 										li.social__item
 											a.social__link(href="https://vk.com/chebiryak" target="_blank")
-												+svg('behance', 'social__icon')
+												+svg('vk', 'social__icon')
 										li.social__item
 											a.social__link(href="https://web.facebook.com/chebiryakk" target="_blank")
 												+svg('facebook', 'social__icon')
@@ -145,7 +145,27 @@ html(lang="en")
 											a.social__link(href="https://www.instagram.com/_kseniya_che_/" target="_blank")
 												+svg('instagram', 'social__icon') 
 
-		
+		.modal#modal
+			.modal__overlay(data-close="true")
+					.modal__window
+						span.modal__close(data-close="true") &times
+						.modal__body
+							.modal__item.modal__content
+								h2.modal__title.title Связаться
+								form.form
+									.form__field
+										input.form__input(type="text" placeholder="Ваше имя" required)
+									.form__field
+										input.form__input(type="email" placeholder="Ваш Email" required)
+									.form__field
+										input.form__input(type="tel" placeholder="Ваш телефон" required)
+									.form__submit
+										button.form__button Отправить
+											span.form__button_decor
+							
+							.modal__decor.modal__item
+								.modal__bg
+									+webp('modal__pic', 'card-img_2', 'png', 'card')
 		script(src="static/js/main.js") 
 		script(src="static/js/adapt.js")
 		script(src="static/js/modal.js") 

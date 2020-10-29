@@ -36,8 +36,8 @@
                   <div class="social">
                     <ul class="social__list">
                       <li class="social__item"><a class="social__link" href="https://vk.com/chebiryak" target="_blank">
-                          <svg class="icon icon-behance social__icon">
-                            <use xlink:href="static/img/svg/sprite.svg#behance"></use>
+                          <svg class="icon icon-vk social__icon">
+                            <use xlink:href="static/img/svg/sprite.svg#vk"></use>
                           </svg></a></li>
                       <li class="social__item"><a class="social__link" href="https://web.facebook.com/chebiryakk" target="_blank">
                           <svg class="icon icon-facebook social__icon">
@@ -88,8 +88,8 @@
               <div class="social">
                 <ul class="social__list">
                   <li class="social__item"><a class="social__link" href="https://vk.com/chebiryak" target="_blank">
-                      <svg class="icon icon-behance social__icon">
-                        <use xlink:href="static/img/svg/sprite.svg#behance"></use>
+                      <svg class="icon icon-vk social__icon">
+                        <use xlink:href="static/img/svg/sprite.svg#vk"></use>
                       </svg></a></li>
                   <li class="social__item"><a class="social__link" href="https://web.facebook.com/chebiryakk" target="_blank">
                       <svg class="icon icon-facebook social__icon">
@@ -110,6 +110,38 @@
         </div>
       </div>
     </footer>
+    <div class="modal" id="modal">
+      <div class="modal__overlay" data-close="true">
+        <div class="modal__window"><span class="modal__close" data-close="true">&times</span>
+          <div class="modal__body">
+            <div class="modal__item modal__content">
+              <h2 class="modal__title title">Связаться</h2>
+              <form class="form">
+                <div class="form__field">
+                  <input class="form__input" type="text" placeholder="Ваше имя" required>
+                </div>
+                <div class="form__field">
+                  <input class="form__input" type="email" placeholder="Ваш Email" required>
+                </div>
+                <div class="form__field">
+                  <input class="form__input" type="tel" placeholder="Ваш телефон" required>
+                </div>
+                <div class="form__submit">
+                  <button class="form__button">Отправить<span class="form__button_decor"></span></button>
+                </div>
+              </form>
+            </div>
+            <div class="modal__decor modal__item">
+              <div class="modal__bg">
+                <picture>
+                  <source srcset="static/img/card-img_2.webp" type="image/webp"/><img class="modal__pic" src="static/img/card-img_2.png" alt="card"/>
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="static/js/main.js"> </script>
     <script src="static/js/adapt.js"></script>
     <script src="static/js/slider.js" type="module"></script>
