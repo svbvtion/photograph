@@ -5,6 +5,8 @@ html(lang="en")
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
 		meta(http-equiv="X-UA-Compatible" content="ie=edge")
+		meta(name="description" content="Ксения Чебиряк. Фотограф удивительных людей")
+
 		title Ксения Чебиряк. Фотограф удивительных людей
 		link(rel='icon' href='./favicon.ico' type='image/x-icon')
 		link(rel="stylesheet" type="text/css" href="static/css/normalize.css")
@@ -32,16 +34,20 @@ html(lang="en")
 									.social
 										ul.social__list
 											li.social__item
-												a.social__link(href="https://vk.com/chebiryak" target="_blank")
+												a.social__link(href="https://vk.com/chebiryak" rel="noopener" target="_blank")
+													span.hidden social
 													+svg('vk', 'social__icon')
 											li.social__item
-												a.social__link(href="https://web.facebook.com/chebiryakk" target="_blank")
+												a.social__link(href="https://web.facebook.com/chebiryakk" rel="noopener" target="_blank")
+													span.hidden social
 													+svg('facebook', 'social__icon')
 											li.social__item
-												a.social__link(href="https://wa.me/79261764569" target="_blank")
+												a.social__link(href="https://wa.me/79261764569" rel="noopener" target="_blank")
+													span.hidden social
 													+svg('twitter', 'social__icon')
 											li.social__item
-												a.social__link(href="https://www.instagram.com/_kseniya_che_/" target="_blank")
+												a.social__link(href="https://www.instagram.com/_kseniya_che_/" rel="noopener" target="_blank")
+													span.hidden social
 													+svg('instagram', 'social__icon') 
 								.burger 
 					
@@ -67,17 +73,22 @@ html(lang="en")
 								.social
 									ul.social__list
 										li.social__item
-											a.social__link(href="https://vk.com/chebiryak" target="_blank")
+											a.social__link(href="https://vk.com/chebiryak" rel="noopener" target="_blank")
+												span.hidden social
 												+svg('vk', 'social__icon')
 										li.social__item
-											a.social__link(href="https://web.facebook.com/chebiryakk" target="_blank")
+											a.social__link(href="https://web.facebook.com/chebiryakk" rel="noopener" target="_blank")
+												span.hidden social
 												+svg('facebook', 'social__icon')
 										li.social__item
-											a.social__link(href="https://wa.me/79261764569" target="_blank")
+											a.social__link(href="https://wa.me/79261764569" rel="noopener" target="_blank")
+												span.hidden social
 												+svg('twitter', 'social__icon')
 										li.social__item
-											a.social__link(href="https://www.instagram.com/_kseniya_che_/" target="_blank")
+											a.social__link(href="https://www.instagram.com/_kseniya_che_/" rel="noopener" target="_blank")
+												span.hidden social
 												+svg('instagram', 'social__icon') 
+
 		.modal#modal
 			.modal__overlay(data-close="true")
 					.modal__window
@@ -87,11 +98,14 @@ html(lang="en")
 								h2.modal__title.title Связаться
 								form.form
 									.form__field
-										input.form__input(type="text" placeholder="Ваше имя" required)
+										input.form__input#formName(type="text" placeholder="Ваше имя" required)
+										label.hidden(for="formName") Name
 									.form__field
-										input.form__input(type="email" placeholder="Ваш Email" required)
+										input.form__input#formEmail(type="email" placeholder="Ваш Email" required)
+										label.hidden(for="formEmail") Email
 									.form__field
-										input.form__input(type="tel" placeholder="Ваш телефон" required)
+										input.form__input#formPhone(type="tel" placeholder="Ваш телефон" required)
+										label.hidden(for="formPhone") Phone
 									.form__submit
 										button.form__button Отправить
 											span.form__button_decor

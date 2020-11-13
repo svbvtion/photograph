@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Ксения Чебиряк. Фотограф удивительных людей">
     <title>Ксения Чебиряк. Фотограф удивительных людей</title>
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="static/css/normalize.css">
@@ -35,19 +36,19 @@
                 <div class="header__social" data-da="header__menu, 767, last">
                   <div class="social">
                     <ul class="social__list">
-                      <li class="social__item"><a class="social__link" href="https://vk.com/chebiryak" target="_blank">
+                      <li class="social__item"><a class="social__link" href="https://vk.com/chebiryak" rel="noopener" target="_blank"><span class="hidden">social</span>
                           <svg class="icon icon-vk social__icon">
                             <use xlink:href="static/img/svg/sprite.svg#vk"></use>
                           </svg></a></li>
-                      <li class="social__item"><a class="social__link" href="https://web.facebook.com/chebiryakk" target="_blank">
+                      <li class="social__item"><a class="social__link" href="https://web.facebook.com/chebiryakk" rel="noopener" target="_blank"><span class="hidden">social</span>
                           <svg class="icon icon-facebook social__icon">
                             <use xlink:href="static/img/svg/sprite.svg#facebook"></use>
                           </svg></a></li>
-                      <li class="social__item"><a class="social__link" href="https://wa.me/79261764569" target="_blank">
+                      <li class="social__item"><a class="social__link" href="https://wa.me/79261764569" rel="noopener" target="_blank"><span class="hidden">social</span>
                           <svg class="icon icon-twitter social__icon">
                             <use xlink:href="static/img/svg/sprite.svg#twitter"></use>
                           </svg></a></li>
-                      <li class="social__item"><a class="social__link" href="https://www.instagram.com/_kseniya_che_/" target="_blank">
+                      <li class="social__item"><a class="social__link" href="https://www.instagram.com/_kseniya_che_/" rel="noopener" target="_blank"><span class="hidden">social</span>
                           <svg class="icon icon-instagram social__icon">
                             <use xlink:href="static/img/svg/sprite.svg#instagram"></use>
                           </svg></a></li>
@@ -88,19 +89,19 @@
             <div class="footer__social">
               <div class="social">
                 <ul class="social__list">
-                  <li class="social__item"><a class="social__link" href="https://vk.com/chebiryak" target="_blank">
+                  <li class="social__item"><a class="social__link" href="https://vk.com/chebiryak" rel="noopener" target="_blank"><span class="hidden">social</span>
                       <svg class="icon icon-vk social__icon">
                         <use xlink:href="static/img/svg/sprite.svg#vk"></use>
                       </svg></a></li>
-                  <li class="social__item"><a class="social__link" href="https://web.facebook.com/chebiryakk" target="_blank">
+                  <li class="social__item"><a class="social__link" href="https://web.facebook.com/chebiryakk" rel="noopener" target="_blank"><span class="hidden">social</span>
                       <svg class="icon icon-facebook social__icon">
                         <use xlink:href="static/img/svg/sprite.svg#facebook"></use>
                       </svg></a></li>
-                  <li class="social__item"><a class="social__link" href="https://wa.me/79261764569" target="_blank">
+                  <li class="social__item"><a class="social__link" href="https://wa.me/79261764569" rel="noopener" target="_blank"><span class="hidden">social</span>
                       <svg class="icon icon-twitter social__icon">
                         <use xlink:href="static/img/svg/sprite.svg#twitter"></use>
                       </svg></a></li>
-                  <li class="social__item"><a class="social__link" href="https://www.instagram.com/_kseniya_che_/" target="_blank">
+                  <li class="social__item"><a class="social__link" href="https://www.instagram.com/_kseniya_che_/" rel="noopener" target="_blank"><span class="hidden">social</span>
                       <svg class="icon icon-instagram social__icon">
                         <use xlink:href="static/img/svg/sprite.svg#instagram"></use>
                       </svg></a></li>
@@ -119,13 +120,16 @@
               <h2 class="modal__title title">Связаться</h2>
               <form class="form">
                 <div class="form__field">
-                  <input class="form__input" type="text" placeholder="Ваше имя" required>
+                  <input class="form__input" id="formName" type="text" placeholder="Ваше имя" required>
+                  <label class="hidden" for="formName">Name</label>
                 </div>
                 <div class="form__field">
-                  <input class="form__input" type="email" placeholder="Ваш Email" required>
+                  <input class="form__input" id="formEmail" type="email" placeholder="Ваш Email" required>
+                  <label class="hidden" for="formEmail">Email</label>
                 </div>
                 <div class="form__field">
-                  <input class="form__input" type="tel" placeholder="Ваш телефон" required>
+                  <input class="form__input" id="formPhone" type="tel" placeholder="Ваш телефон" required>
+                  <label class="hidden" for="formPhone">Phone</label>
                 </div>
                 <div class="form__submit">
                   <button class="form__button">Отправить<span class="form__button_decor"></span></button>
